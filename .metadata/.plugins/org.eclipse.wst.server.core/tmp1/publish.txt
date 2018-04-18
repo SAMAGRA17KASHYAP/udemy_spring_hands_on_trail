@@ -1,0 +1,3 @@
+#Tomcat publish data
+#Thu Mar 29 01:50:39 IST 2018
+org.eclipse.jst.j2ee.server\:sam-web=D\:\\springsts01\\sts-bundle\\pivotal-tc-server-developer-3.2.8.RELEASE\\base-instance\\wtpwebapps\\sam-web

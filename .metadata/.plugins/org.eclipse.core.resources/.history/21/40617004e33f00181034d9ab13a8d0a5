@@ -1,0 +1,5 @@
+package emy.web.service;
+
+public class CustomerService {
+
+}

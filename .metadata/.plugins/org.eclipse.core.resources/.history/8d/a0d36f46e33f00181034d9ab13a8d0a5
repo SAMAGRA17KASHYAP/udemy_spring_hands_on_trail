@@ -1,0 +1,15 @@
+package emy.web.service;
+
+import java.util.List;
+
+import emy.entity.Customer;
+
+public class CustomerServiceImpl implements CustomerService {
+
+	@Override
+	public List<Customer> getCustomers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

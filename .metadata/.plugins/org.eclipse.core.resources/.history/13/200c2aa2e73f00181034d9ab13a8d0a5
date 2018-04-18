@@ -1,0 +1,33 @@
+package emy.web.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import emy.entity.Customer;
+import emy.web.service.CustomerService;
+
+@Controller
+@RequestMapping("/customer")
+public class CustomerController {
+
+	@Autowired
+	CustomerService customerService;
+	
+	@RequestMapping("/list")
+	public String listCustomer(Model theModel) {
+		List<Customer> customers= customerService.getCustomers();
+		theModel.addAttribute("customers",customers);
+
+		return "list-customer";
+	}
+	
+	@RequestMapping(value="/addCustomer")
+	public String addCustomer(Model theModel) {
+		theModel.addAttribute("customer",new Customer());
+		return "add-customer";
+	}
+}

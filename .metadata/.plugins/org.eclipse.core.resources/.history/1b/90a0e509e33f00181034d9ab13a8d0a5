@@ -1,0 +1,9 @@
+package emy.web.service;
+
+import java.util.List;
+
+public class CustomerService {
+
+	List<String> getCustomers();
+	
+}

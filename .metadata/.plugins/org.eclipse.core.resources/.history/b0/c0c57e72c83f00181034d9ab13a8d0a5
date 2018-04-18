@@ -1,0 +1,5 @@
+package emy.dao;
+
+public class CustomerDao {
+
+}

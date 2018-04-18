@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+D:\JAVAEE\udemy\springandHibernate\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2700151541.index
+3661855512.index
+4190117029.index
+2290262603.index
+376336204.index
+386513599.index
+2184593659.index
+94586900.index
+1386391033.index

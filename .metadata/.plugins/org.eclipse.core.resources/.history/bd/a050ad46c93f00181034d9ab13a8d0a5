@@ -1,0 +1,29 @@
+package emy.dao;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+
+import emy.entity.Customer;
+
+public class CustomerDaoImpl implements CustomerDao {
+
+	@Autowired
+	SessionFactory sessionFactory;
+	
+	@Transactional
+	public List<Customer> getCustomers() {
+		Session session = sessionFactory.getCurrentSession();
+		
+		Query<Customer> customerQuery= session.createQuery("from Customer",Customer.class);
+		
+		
+		
+		return null;
+	}
+
+}

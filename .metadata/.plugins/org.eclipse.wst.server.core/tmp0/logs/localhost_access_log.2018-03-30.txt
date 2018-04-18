@@ -1,0 +1,10 @@
+127.0.0.1 - - [30/Mar/2018:00:03:42 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:00:03:43 +0530] "GET /sam-web/ HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:00:04:10 +0530] "POST /sam-web/student/processForm.html HTTP/1.1" 200 295
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:00:04:16 +0530] "POST /sam-web/student/processForm.html HTTP/1.1" 200 295
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:00:12:05 +0530] "POST /sam-web/student/processForm.html HTTP/1.1" 200 314
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:00:12:10 +0530] "GET /sam-web/student/showForm.html HTTP/1.1" 200 795
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:00:12:15 +0530] "POST /sam-web/student/processForm.html HTTP/1.1" 200 321
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:00:19:58 +0530] "GET /sam-web/student/showForm.html HTTP/1.1" 500 4630
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:00:21:11 +0530] "GET /sam-web/student/showForm.html HTTP/1.1" 200 792
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:00:21:16 +0530] "POST /sam-web/student/processForm.html HTTP/1.1" 200 318

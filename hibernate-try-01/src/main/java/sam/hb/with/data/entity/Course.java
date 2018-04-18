@@ -1,0 +1,57 @@
+package sam.hb.with.data.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="course")
+public class Course {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.TABLE)
+	public int id;
+	
+	public String title;
+	
+	@ManyToOne
+	@JoinColumn(name="instructor_id")
+	public Instructor instructor;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public Instructor getInstructor() {
+		return instructor;
+	}
+
+	public void setInstructor(Instructor instructor) {
+		this.instructor = instructor;
+	}
+
+	public Course(int id, String title, Instructor instructor) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.instructor = instructor;
+	}
+	
+		
+}
